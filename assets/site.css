@@ -1,29 +1,49 @@
 .policies {
-  line-height: 2.5em;
+	line-height: 2.5em;
 }
 .gdocs-container {
-  position: relative;
-  padding-bottom: 800px;
+	position: relative;
+	padding-bottom: 800px;
 }
 @media only screen and (max-width: 815px) {
-  .gdocs-container {
-    padding-bottom: 170%;
-    position: static;
-  }
+	.gdocs-container {
+		padding-bottom: 170%;
+		position: static;
+	}
 }
 .gdocs-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90vh;
-  border: 0;
-  max-width: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90vh;
+	border: 0;
+	max-width: 800px;
+}
+.navbar {
+	position: relative !important;
 }
 .navbarlink {
-  text-decoration: none;
-  color: white !important;
+	text-decoration: none;
+	color: white !important;
+}
+.sidelink {
+	text-decoration: none;
+	color: #ffc107 !important;
+}
+.thumbnail {
+	width: 75px;
+	visibility: hidden;
+}
+@media only screen and (max-width: 600px) {
+	.thumbnail {
+		visibility: visible;
+		margin: 25%;
+	}
+	.navbarlink {
+		visibility: hidden;
+	}
 }
 .logo {
-  width: 250px;
+	width: 250px;
 }

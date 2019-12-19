@@ -1,20 +1,50 @@
 <template>
   <v-app light>
+    <v-system-bar color="amber"></v-system-bar>
     <v-app-bar color="blue darken-4" class="navbar" app>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+
       <v-toolbar-title>
-        <nuxt-link class="navbarlink" to="/">MWPA</nuxt-link>
+        <nuxt-link class="navbarlink" to="/">Michigan Water Polo Association</nuxt-link>
       </v-toolbar-title>
+      <img src="/logo.png" class="thumbnail" />
+
       <v-spacer></v-spacer>
       <v-btn text nuxt to="/policies" class="navbarlink">Policies</v-btn>
       <v-btn text nuxt to="/girls2020schedule" class="navbarlink">Girls 2020 Schedule</v-btn>
       <v-btn text class="navbarlink">Boys 2019 Results</v-btn>
       <template v-if="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list-item>
+        <v-list-item-avatar>
+          <v-img src="/logo.png"></v-img>
+        </v-list-item-avatar>
+
+        <v-list-item-content>
+          <nuxt-link class="sidelink" to="/">MWPA</nuxt-link>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list dense>
+        <v-list-item v-for="item in items" :key="item.title" link nuxt :to="{ path: item.to }">
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
+
     <v-footer :fixed="fixed" app>
       <span>&copy; 2019</span>
     </v-footer>
@@ -31,13 +61,13 @@ export default {
       items: [
         {
           icon: "mdi-apps",
-          title: "Welcome",
-          to: "/"
+          title: "Policies",
+          to: "/policies"
         },
         {
           icon: "mdi-chart-bubble",
-          title: "Inspire",
-          to: "/inspire"
+          title: "Girls 2020 Schedule",
+          to: "/girls2020schedule"
         }
       ],
       miniVariant: false,
