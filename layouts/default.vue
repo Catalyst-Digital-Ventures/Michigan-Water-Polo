@@ -1,6 +1,5 @@
 <template>
   <v-app light>
-    <v-system-bar color="amber"></v-system-bar>
     <v-app-bar color="blue darken-4" class="navbar" app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -15,6 +14,8 @@
       <v-btn text class="navbarlink">Boys 2019 Results</v-btn>
       <template v-if="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
+    <v-system-bar class="navbartop" color="amber"></v-system-bar>
+
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list-item>
         <v-list-item-avatar>
@@ -46,7 +47,14 @@
     </v-content>
 
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2019</span>
+      <span>&copy; 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019 Michigan Water Polo Association</span>
+      <!-- <nuxt-link to="/policies" class="footerlink">Policies</nuxt-link>
+      <nuxt-link to="/girls2020schedule" class="footerlink">Girls 2020 Schedule</nuxt-link>
+      <nuxt-link to="/" class="footerlink">Boys 2019 Results</nuxt-link>-->
+      <div class="footerlink">
+        Last Updated: March 09, 2020
+        President: Andrew Olesnavich / Vice-President: Joey Sutherlin
+      </div>
     </v-footer>
   </v-app>
 </template>

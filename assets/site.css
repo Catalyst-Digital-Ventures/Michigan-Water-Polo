@@ -20,8 +20,9 @@
 	border: 0;
 	max-width: 800px;
 }
+
 .navbar {
-	position: relative !important;
+	position: sticky !important;
 }
 .navbarlink {
 	text-decoration: none;
@@ -30,6 +31,11 @@
 .sidelink {
 	text-decoration: none;
 	color: #ffc107 !important;
+}
+.footerlink {
+	text-decoration: none;
+	color: black;
+	margin-left: auto;
 }
 .thumbnail {
 	width: 75px;
