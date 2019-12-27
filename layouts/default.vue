@@ -11,7 +11,7 @@
       <v-spacer></v-spacer>
       <v-btn text nuxt to="/policies" class="navbarlink">Policies</v-btn>
       <v-btn text nuxt to="/girls2020schedule" class="navbarlink">Girls 2020 Schedule</v-btn>
-      <v-btn text class="navbarlink">Boys 2019 Results</v-btn>
+      <v-btn text nuxt to="/boys2019results" class="navbarlink">Boys 2019 Results</v-btn>
       <template v-if="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
