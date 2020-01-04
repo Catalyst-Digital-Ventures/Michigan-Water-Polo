@@ -47,14 +47,9 @@
     </v-content>
 
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019 Michigan Water Polo Association</span>
-      <!-- <nuxt-link to="/policies" class="footerlink">Policies</nuxt-link>
-      <nuxt-link to="/girls2020schedule" class="footerlink">Girls 2020 Schedule</nuxt-link>
-      <nuxt-link to="/" class="footerlink">Boys 2019 Results</nuxt-link>-->
-      <div class="footerlink">
-        Last Updated: March 09, 2020
-        President: Andrew Olesnavich / Vice-President: Joey Sutherlin
-      </div>
+      <span>&copy; 2020 Michigan Water Polo Association</span>
+      Last Updated: March 09, 2020
+      President: Andrew Olesnavich / Vice-President: Joey Sutherlin
     </v-footer>
   </v-app>
 </template>
@@ -76,6 +71,11 @@ export default {
           icon: "mdi-chart-bubble",
           title: "Girls 2020 Schedule",
           to: "/girls2020schedule"
+        },
+        {
+          icon: "mdi-chart-bubble",
+          title: "Boys 2019 Results",
+          to: "/boys2019results"
         }
       ],
       miniVariant: false,
