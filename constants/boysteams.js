@@ -1,3 +1,3 @@
-import { AAPIONEER } from "../assets/constants";
+import { AAPIONEER } from '../assets/constants';
 
-export AAPIONEER
+export const AAPIONEER = 'AA Pioneer';
