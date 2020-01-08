@@ -80,22 +80,40 @@
             </v-card-actions>
           </v-card>
         </v-menu>
+        <v-card class="mx-auto">
+          <v-container fluid>
+            <v-row dense>
+              <v-col>
+                <v-card class="mx-auto" outlined>
+                  <article class="gdocs-container">
+                    <vue-friendly-iframe
+                      :src="
+          'https://docs.google.com/spreadsheets/d/e/2PACX-1vR6A8XwIN_Q21i5zSQdP3oIev_-t7edsSWRpzWWqlgQ8SA-f7Ct4EbkSHbvriqve8T5FJRYjBLW_16u/pubhtml'
+        "
+                    ></vue-friendly-iframe>
+                  </article>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card>
       </v-sheet>
     </v-col>
   </v-row>
 </template>
 
+
 <script>
+import VueFriendlyIframe from "vue-friendly-iframe";
+
 export default {
   data: () => ({
     today: Date.now(),
     focus: Date.now(),
-    type: "month",
+    type: "week",
     typeToLabel: {
-      month: "Month",
       week: "Week",
-      day: "Day",
-      "4day": "4 Days"
+      day: "Day"
     },
     start: null,
     end: null,
@@ -104,17 +122,17 @@ export default {
     selectedOpen: false,
     events: [
       {
-        name: "Vacation",
+        name: "Holt/EL vs AA Huron",
         details: "Going to the beach!",
-        start: "2019-12-29",
-        end: "2020-01-01",
+        start: "2020-03-18 10:00",
+        end: "2020-03-18 11:00",
         color: "blue"
       },
       {
-        name: "Meeting",
+        name: "Mason vs Grand Blanc",
         details: "Spending time on how we do not have enough time",
-        start: "2020-01-07 09:00",
-        end: "2020-01-07 09:30",
+        start: "2020-03-19 09:00",
+        end: "2020-03-19 09:30",
         color: "indigo"
       },
       {
@@ -230,6 +248,9 @@ export default {
       }
     ]
   }),
+  components: {
+    VueFriendlyIframe
+  },
   computed: {
     title() {
       const { start, end } = this;

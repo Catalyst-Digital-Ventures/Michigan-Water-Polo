@@ -6,7 +6,7 @@
         "
     ></vue-friendly-iframe>
   </article>
-</template>z
+</template>
 
 <script>
 import VueFriendlyIframe from "vue-friendly-iframe";
