@@ -430,5 +430,86 @@
     "date": "9/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
     "flex": 6
+  },
+  {
+    "home": "AA Huron",
+    "away": "AA Pioneer",
+    "homeScore": "10",
+    "awayScore": "9",
+    "date": "9/17/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "Lake Orion",
+    "away": "Walled Lake",
+    "homeScore": "",
+    "awayScore": "",
+    "date": "9/17/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "Chelsea",
+    "away": "Portage",
+    "homeScore": "",
+    "awayScore": "",
+    "date": "9/17/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "Bham Groves",
+    "away": "Troy United",
+    "homeScore": "13",
+    "awayScore": "7",
+    "date": "9/18/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "Saline",
+    "away": "Dexter",
+    "homeScore": "3",
+    "awayScore": "18",
+    "date": "9/18/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "Hudsonville",
+    "away": "West Ottawa",
+    "homeScore": "17",
+    "awayScore": "3",
+    "date": "9/18/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "Jenison",
+    "away": "Zeeland",
+    "homeScore": "8",
+    "awayScore": "13",
+    "date": "9/18/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "E Kentwood",
+    "away": "Grand Haven",
+    "homeScore": "4",
+    "awayScore": "14",
+    "date": "9/18/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
+  },
+  {
+    "home": "Mason GL",
+    "away": "Bham Seaholm",
+    "homeScore": "3",
+    "awayScore": "15",
+    "date": "9/18/2019",
+    "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+    "flex": 6
   }
 ]
