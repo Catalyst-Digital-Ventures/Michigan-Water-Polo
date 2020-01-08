@@ -31,103 +31,15 @@
 </template>
 
 <script>
-import { AAPIONEER } from "../assets/constants";
+import { AAPIONEER } from "~/assets/constants";
+import cards from "~/data/2019boysresults.json";
 
 export default {
-  data: () => ({
-    cards: [
-      {
-        home: "St. Francis",
-        away: AAPIONEER,
-        homeScore: "10",
-        awayScore: "9",
-        date: "8/20/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-        flex: 6
-      },
-      {
-        home: "Bham Seaholm",
-        away: "AA Skyline",
-        homeScore: "7",
-        awayScore: "10",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        flex: 6
-      },
-      {
-        home: "Mason GL",
-        away: "Portage",
-        homeScore: "15",
-        awayScore: "7",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      },
-      {
-        home: "Troy United",
-        away: "Grand Blanc",
-        homeScore: "0",
-        awayScore: "13",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      },
-      {
-        home: "Sylvania (OH)",
-        away: "Chelsea",
-        homeScore: "",
-        awayScore: "",
-        date: "8/22/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      },
-      {
-        home: "Troy United",
-        away: "Lake Orion",
-        homeScore: "15",
-        awayScore: "7",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      },
-      {
-        home: "Mason GL",
-        away: "Portage",
-        homeScore: "15",
-        awayScore: "7",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      },
-      {
-        home: "Mason GL",
-        away: "Portage",
-        homeScore: "15",
-        awayScore: "7",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      },
-      {
-        home: "Mason GL",
-        away: "Portage",
-        homeScore: "15",
-        awayScore: "7",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      },
-      {
-        home: "Mason GL",
-        away: "Portage",
-        homeScore: "15",
-        awayScore: "7",
-        date: "8/21/2020",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      }
-    ]
-  })
+  data() {
+    return {
+      cards
+    };
+  }
 };
 </script>
 
