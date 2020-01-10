@@ -6,7 +6,7 @@
     "awayScore": "9",
     "date": "8/20/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Seaholm",
@@ -15,7 +15,7 @@
     "awayScore": "10",
     "date": "8/21/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Mason GL",
@@ -24,7 +24,7 @@
     "awayScore": "7",
     "date": "8/21/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -33,7 +33,7 @@
     "awayScore": "13",
     "date": "8/21/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Sylvania (OH)",
@@ -42,7 +42,7 @@
     "awayScore": "",
     "date": "8/22/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -51,7 +51,7 @@
     "awayScore": "8",
     "date": "8/26/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Grand Blanc",
@@ -60,7 +60,7 @@
     "awayScore": "",
     "date": "8/27/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Walled Lake",
@@ -69,7 +69,7 @@
     "awayScore": "8",
     "date": "8/27/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Holt/E.L",
@@ -78,7 +78,7 @@
     "awayScore": "",
     "date": "8/27/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Sylvania (OH)",
@@ -87,7 +87,7 @@
     "awayScore": "",
     "date": "8/27/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Pioneer",
@@ -96,7 +96,7 @@
     "awayScore": "7",
     "date": "8/28/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Holt/E.L.",
@@ -105,7 +105,7 @@
     "awayScore": "12",
     "date": "8/29/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -114,7 +114,7 @@
     "awayScore": "14",
     "date": "8/29/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Seaholm",
@@ -123,7 +123,7 @@
     "awayScore": "16",
     "date": "8/29/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Walled Lake",
@@ -132,7 +132,7 @@
     "awayScore": "13",
     "date": "9/3/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Walled Lake",
@@ -141,7 +141,7 @@
     "awayScore": "19",
     "date": "9/3/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Grand Blanc",
@@ -150,7 +150,7 @@
     "awayScore": "21",
     "date": "9/4/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Rockford",
@@ -159,7 +159,7 @@
     "awayScore": "4",
     "date": "9/4/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Groves",
@@ -168,7 +168,7 @@
     "awayScore": "8",
     "date": "9/4/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Holt/E.L.",
@@ -177,7 +177,7 @@
     "awayScore": "",
     "date": "9/4/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -186,7 +186,7 @@
     "awayScore": "7",
     "date": "9/4/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Zeeland",
@@ -195,7 +195,7 @@
     "awayScore": "",
     "date": "9/4/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Huron",
@@ -204,7 +204,7 @@
     "awayScore": "3",
     "date": "9/5/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "West Ottawa",
@@ -213,7 +213,7 @@
     "awayScore": "10",
     "date": "9/5/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Napoleon (OH)",
@@ -222,7 +222,7 @@
     "awayScore": "",
     "date": "9/5/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -231,7 +231,7 @@
     "awayScore": "6",
     "date": "9/5/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -240,7 +240,7 @@
     "awayScore": "7",
     "date": "9/7/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -249,7 +249,7 @@
     "awayScore": "6",
     "date": "9/7/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -258,7 +258,7 @@
     "awayScore": "3",
     "date": "9/7/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -267,7 +267,7 @@
     "awayScore": "4",
     "date": "9/8/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -276,7 +276,7 @@
     "awayScore": "7",
     "date": "9/8/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Portage",
@@ -285,7 +285,7 @@
     "awayScore": "18",
     "date": "9/9/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Seaholm",
@@ -294,7 +294,7 @@
     "awayScore": "16",
     "date": "9/9/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Saline",
@@ -303,7 +303,7 @@
     "awayScore": "11",
     "date": "9/9/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Mason GL",
@@ -312,7 +312,7 @@
     "awayScore": "",
     "date": "9/10/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Huron",
@@ -321,7 +321,7 @@
     "awayScore": "7",
     "date": "9/10/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "West Ottawa",
@@ -330,7 +330,7 @@
     "awayScore": "11",
     "date": "9/11/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -339,7 +339,7 @@
     "awayScore": "5",
     "date": "9/11/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Lake Orion",
@@ -348,7 +348,7 @@
     "awayScore": "19",
     "date": "9/11/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Pioneer",
@@ -357,7 +357,7 @@
     "awayScore": "9",
     "date": "9/11/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Grand Rapids",
@@ -366,7 +366,7 @@
     "awayScore": "15",
     "date": "9/11/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Rockford",
@@ -375,7 +375,7 @@
     "awayScore": "1",
     "date": "9/11/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -384,7 +384,7 @@
     "awayScore": "",
     "date": "9/12/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Groves",
@@ -393,7 +393,7 @@
     "awayScore": "3",
     "date": "9/12/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Walled Lake",
@@ -402,7 +402,7 @@
     "awayScore": "",
     "date": "9/12/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Grand Rapids",
@@ -411,7 +411,7 @@
     "awayScore": "",
     "date": "9/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -420,7 +420,7 @@
     "awayScore": "16",
     "date": "9/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Huron",
@@ -429,7 +429,7 @@
     "awayScore": "3",
     "date": "9/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Huron",
@@ -438,7 +438,7 @@
     "awayScore": "9",
     "date": "9/17/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Lake Orion",
@@ -447,7 +447,7 @@
     "awayScore": "",
     "date": "9/17/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -456,7 +456,7 @@
     "awayScore": "",
     "date": "9/17/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Groves",
@@ -465,7 +465,7 @@
     "awayScore": "7",
     "date": "9/18/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Saline",
@@ -474,7 +474,7 @@
     "awayScore": "18",
     "date": "9/18/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Hudsonville",
@@ -483,7 +483,7 @@
     "awayScore": "3",
     "date": "9/18/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Jenison",
@@ -492,7 +492,7 @@
     "awayScore": "13",
     "date": "9/18/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Kentwood",
@@ -501,7 +501,7 @@
     "awayScore": "14",
     "date": "9/18/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Mason GL",
@@ -510,7 +510,7 @@
     "awayScore": "15",
     "date": "9/18/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -519,7 +519,7 @@
     "awayScore": "13",
     "date": "9/23/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Seaholm",
@@ -528,7 +528,7 @@
     "awayScore": "7",
     "date": "9/23/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Hudsonville",
@@ -537,7 +537,7 @@
     "awayScore": "4",
     "date": "9/23/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Portage",
@@ -546,7 +546,7 @@
     "awayScore": "14",
     "date": "9/24/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -555,7 +555,7 @@
     "awayScore": "6",
     "date": "9/25/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Grand Haven",
@@ -564,7 +564,7 @@
     "awayScore": "19",
     "date": "9/25/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -573,7 +573,7 @@
     "awayScore": "15",
     "date": "9/25/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Skyline",
@@ -582,7 +582,7 @@
     "awayScore": "10",
     "date": "9/25/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Rockford",
@@ -591,7 +591,7 @@
     "awayScore": "7",
     "date": "9/25/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -600,7 +600,7 @@
     "awayScore": "4",
     "date": "9/26/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Hudsonville",
@@ -609,7 +609,7 @@
     "awayScore": "1",
     "date": "9/30/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Grand Rapids",
@@ -618,7 +618,7 @@
     "awayScore": "5",
     "date": "9/30/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Zeeland",
@@ -627,7 +627,7 @@
     "awayScore": "9",
     "date": "9/30/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Jenison",
@@ -636,7 +636,7 @@
     "awayScore": "14",
     "date": "9/30/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Skyline",
@@ -645,7 +645,7 @@
     "awayScore": "14",
     "date": "10/01/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Grand Blanc",
@@ -654,7 +654,7 @@
     "awayScore": "9",
     "date": "10/02/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Jenison",
@@ -663,7 +663,7 @@
     "awayScore": "9",
     "date": "10/02/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Seaholm",
@@ -672,7 +672,7 @@
     "awayScore": "5",
     "date": "10/02/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Zeeland",
@@ -681,7 +681,7 @@
     "awayScore": "18",
     "date": "10/02/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "West Ottawa",
@@ -690,7 +690,7 @@
     "awayScore": "3",
     "date": "10/02/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -699,7 +699,7 @@
     "awayScore": "",
     "date": "10/02/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Groves",
@@ -708,7 +708,7 @@
     "awayScore": "11",
     "date": "10/03/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -717,7 +717,7 @@
     "awayScore": "",
     "date": "10/03/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Walled Lake",
@@ -726,7 +726,7 @@
     "awayScore": "15",
     "date": "10/03/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -735,7 +735,7 @@
     "awayScore": "8",
     "date": "10/03/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Pioneer",
@@ -744,7 +744,7 @@
     "awayScore": "7",
     "date": "10/04/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Huron",
@@ -753,7 +753,7 @@
     "awayScore": "",
     "date": "10/07/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Pioneer",
@@ -762,7 +762,7 @@
     "awayScore": "7",
     "date": "10/07/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -771,7 +771,7 @@
     "awayScore": "13",
     "date": "10/07/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Groves",
@@ -780,7 +780,7 @@
     "awayScore": "",
     "date": "10/08/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Huron",
@@ -789,7 +789,7 @@
     "awayScore": "",
     "date": "10/08/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Grand Rapids",
@@ -798,7 +798,7 @@
     "awayScore": "5",
     "date": "10/09/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Grand Haven",
@@ -807,7 +807,7 @@
     "awayScore": "",
     "date": "10/09/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "West Ottawa",
@@ -816,7 +816,7 @@
     "awayScore": "3",
     "date": "10/09/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Dexter",
@@ -825,7 +825,7 @@
     "awayScore": "",
     "date": "10/09/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Pioneer",
@@ -834,7 +834,7 @@
     "awayScore": "",
     "date": "10/10/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Portage",
@@ -843,7 +843,7 @@
     "awayScore": "5",
     "date": "10/10/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Troy United",
@@ -852,7 +852,7 @@
     "awayScore": "10",
     "date": "10/10/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Kentwood",
@@ -861,7 +861,7 @@
     "awayScore": "11",
     "date": "10/14/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Hudsonville",
@@ -870,7 +870,7 @@
     "awayScore": "",
     "date": "10/14/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Grand Rapids",
@@ -879,7 +879,7 @@
     "awayScore": "13",
     "date": "10/14/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Huron",
@@ -888,7 +888,7 @@
     "awayScore": "",
     "date": "10/14/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Skyline",
@@ -897,7 +897,7 @@
     "awayScore": "",
     "date": "10/14/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Saline",
@@ -906,7 +906,7 @@
     "awayScore": "5",
     "date": "10/15/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -915,7 +915,7 @@
     "awayScore": "",
     "date": "10/15/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Seaholm",
@@ -924,7 +924,7 @@
     "awayScore": "10",
     "date": "10/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "E Grand Rapids",
@@ -933,7 +933,7 @@
     "awayScore": "4",
     "date": "10/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Sylvania (OH)",
@@ -942,7 +942,7 @@
     "awayScore": "13",
     "date": "10/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Bham Groves",
@@ -951,7 +951,7 @@
     "awayScore": "9",
     "date": "10/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Rockford",
@@ -960,7 +960,7 @@
     "awayScore": "4",
     "date": "10/16/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Pioneer",
@@ -969,7 +969,7 @@
     "awayScore": "",
     "date": "10/21/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "AA Pioneer",
@@ -978,7 +978,7 @@
     "awayScore": "",
     "date": "10/22/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   },
   {
     "home": "Chelsea",
@@ -987,6 +987,6 @@
     "awayScore": "",
     "date": "10/22/2019",
     "src": "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-    "flex": 6
+    "flex": 12
   }
 ]

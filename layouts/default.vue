@@ -16,7 +16,7 @@
     </v-app-bar>
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list-item>
         <v-list-item-avatar>
           <v-img src="/logo.png"></v-img>

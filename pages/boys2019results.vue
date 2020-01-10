@@ -1,20 +1,21 @@
 
 <template>
-  <v-card class="mx-auto" max-width="500">
+  <v-card class="mx-auto" max-width="800">
     <v-container fluid>
       Boys 2019 Results
-      <v-row dense>
-        <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-          <v-card class="mx-auto" max-width="344" outlined>
+      <v-row>
+        <v-col v-for="card in cards" :key="card.home" :cols="card.flex">
+          <v-card class="mx-auto" max-width="500" outlined>
             <v-list-item three-line>
               <v-list-item-content>
-                <div class="overline mb-4">FINAL</div>
+                <div class="overline mb-1">FINAL</div>
                 <v-list-item-subtitle v-text="card.home"></v-list-item-subtitle>
                 <v-list-item-subtitle v-text="card.away"></v-list-item-subtitle>
               </v-list-item-content>
+              <v-spacer></v-spacer>
 
               <v-list-item-content>
-                <div class="overline mb-4">Score</div>
+                <div class="overline mb-1">Score</div>
                 <v-list-item-subtitle v-text="card.homeScore"></v-list-item-subtitle>
                 <v-list-item-subtitle v-text="card.awayScore"></v-list-item-subtitle>
               </v-list-item-content>
