@@ -26,12 +26,6 @@
               <v-list-item @click="type = 'week'">
                 <v-list-item-title>Week</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="type = 'month'">
-                <v-list-item-title>Month</v-list-item-title>
-              </v-list-item>
-              <v-list-item @click="type = '4day'">
-                <v-list-item-title>4 days</v-list-item-title>
-              </v-list-item>
             </v-list>
           </v-menu>
         </v-toolbar>
@@ -63,7 +57,7 @@
               <v-btn icon>
                 <v-icon>mdi-pencil</v-icon>
               </v-btn>
-              <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
+              <v-toolbar-title>{{selectedEvent.homeTeam}} vs {{selectedEvent.awayTeam}}</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-btn icon>
                 <v-icon>mdi-heart</v-icon>
@@ -105,6 +99,7 @@
 
 <script>
 import VueFriendlyIframe from "vue-friendly-iframe";
+import schedule from "~/data/2020girlsSchedule.json";
 
 export default {
   data: () => ({
@@ -120,133 +115,7 @@ export default {
     selectedEvent: {},
     selectedElement: null,
     selectedOpen: false,
-    events: [
-      {
-        name: "Holt/EL vs AA Huron",
-        details: "Going to the beach!",
-        start: "2020-03-18 10:00",
-        end: "2020-03-18 11:00",
-        color: "blue"
-      },
-      {
-        name: "Mason vs Grand Blanc",
-        details: "Spending time on how we do not have enough time",
-        start: "2020-03-19 09:00",
-        end: "2020-03-19 09:30",
-        color: "indigo"
-      },
-      {
-        name: "Large Event",
-        details:
-          "This starts in the middle of an event and spans over multiple events",
-        start: "2019-12-31",
-        end: "2020-01-04",
-        color: "deep-purple"
-      },
-      {
-        name: "3rd to 7th",
-        details: "Testing",
-        start: "2020-01-03",
-        end: "2020-01-07",
-        color: "cyan"
-      },
-      {
-        name: "Big Meeting",
-        details: "A very important meeting about nothing",
-        start: "2020-01-07 08:00",
-        end: "2020-01-07 11:30",
-        color: "red"
-      },
-      {
-        name: "Another Meeting",
-        details: "Another important meeting about nothing",
-        start: "2020-01-07 10:00",
-        end: "2020-01-07 13:30",
-        color: "brown"
-      },
-      {
-        name: "7th to 8th",
-        start: "2020-01-07",
-        end: "2020-01-08",
-        color: "blue"
-      },
-      {
-        name: "Lunch",
-        details: "Time to feed",
-        start: "2020-01-07 12:00",
-        end: "2020-01-07 15:00",
-        color: "deep-orange"
-      },
-      {
-        name: "30th Birthday",
-        details: "Celebrate responsibly",
-        start: "2020-01-03",
-        color: "teal"
-      },
-      {
-        name: "New Year",
-        details: "Eat chocolate until you pass out",
-        start: "2020-01-01",
-        end: "2020-01-02",
-        color: "green"
-      },
-      {
-        name: "Conference",
-        details: "The best time of my life",
-        start: "2020-01-21",
-        end: "2020-01-28",
-        color: "grey darken-1"
-      },
-      {
-        name: "Hackathon",
-        details: "Code like there is no tommorrow",
-        start: "2020-01-30 23:00",
-        end: "2020-02-01 08:00",
-        color: "black"
-      },
-      {
-        name: "event 1",
-        start: "2020-01-14 18:00",
-        end: "2020-01-14 19:00",
-        color: "#4285F4"
-      },
-      {
-        name: "event 2",
-        start: "2020-01-14 18:00",
-        end: "2020-01-14 19:00",
-        color: "#4285F4"
-      },
-      {
-        name: "event 5",
-        start: "2020-01-14 18:00",
-        end: "2020-01-14 19:00",
-        color: "#4285F4"
-      },
-      {
-        name: "event 3",
-        start: "2020-01-14 18:30",
-        end: "2020-01-14 20:30",
-        color: "#4285F4"
-      },
-      {
-        name: "event 4",
-        start: "2020-01-14 19:00",
-        end: "2020-01-14 20:00",
-        color: "#4285F4"
-      },
-      {
-        name: "event 6",
-        start: "2020-01-14 21:00",
-        end: "2020-01-14 23:00",
-        color: "#4285F4"
-      },
-      {
-        name: "event 7",
-        start: "2020-01-14 22:00",
-        end: "2020-01-14 23:00",
-        color: "#4285F4"
-      }
-    ]
+    events: schedule
   }),
   components: {
     VueFriendlyIframe
@@ -270,8 +139,6 @@ export default {
       const endDay = end.day + this.nth(end.day);
 
       switch (this.type) {
-        case "month":
-          return `${startMonth} ${startYear}`;
         case "week":
         case "4day":
           return `${startMonth} ${startDay} ${startYear} - ${suffixMonth} ${endDay} ${suffixYear}`;
