@@ -1,22 +1,9 @@
 [
 	{
-		"name": "",
-		"homeTeam": "Holt/EL",
-		"awayTeam": "AA Huron",
-		"details": "Going to the beach!",
-		"Conference": "East",
-		"start": "2020-03-18 19:00",
-		"end": "2020-03-18 20:00",
-		"color": "blue"
-	},
-	{
-		"name": "",
-		"homeTeam": "Mason",
-		"awayTeam": "Grand Blanc",
-		"Conference": "East",
-		"details": "Going to the beach!",
-		"start": "2020-03-19 19:00",
-		"end": "2020-03-19 20:00",
-		"color": "blue"
+		"home": "Portage",
+		"away": "Mason",
+		"date": "3/17/2020",
+		"src": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+		"flex": 12
 	}
 ]
