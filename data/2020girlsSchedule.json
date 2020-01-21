@@ -2,7 +2,16 @@
 	{
 		"home": "Portage",
 		"away": "Mason",
+		"region": "East",
 		"date": "3/17/2020",
+		"src": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+		"flex": 12
+	},
+	{
+		"home": "Holt/EL",
+		"away": "AA Huron",
+		"region": "East",
+		"date": "3/18/2020",
 		"src": "https://cdn.vuetifyjs.com/images/cards/house.jpg",
 		"flex": 12
 	}
