@@ -1,257 +1,101 @@
-
 <template>
   <div>
     <p class="title">Girls 2020 Schedule</p>
-    <v-card class="mx-auto" max-width="800">
-      <v-container fluid>
-        <v-row>
-          <v-col v-for="card in cards" :key="card.date" :cols="card.flex">
-            <v-card class="mx-auto" max-width="500" outlined>
-              <v-list-item three-line>
-                <v-list-item-content>
-                  <v-list-item-subtitle v-text="card.date"></v-list-item-subtitle>
-                  <v-list-item-title v-text="card.home"></v-list-item-title>
-                  <v-list-item-title v-text="card.away"></v-list-item-title>
-                </v-list-item-content>
-                <v-list-item-content>
-                  <v-list-item-title v-text="card.region" class="region"></v-list-item-title>
-                </v-list-item-content>
-                <v-spacer></v-spacer>
-              </v-list-item>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-pagination v-model="page" :length="6"></v-pagination>
-    </v-card>
+    <v-container fluid>
+      <v-data-iterator :items="cards" :page="page" hide-default-footer>
+        <template>
+          <v-row>
+            <v-col v-for="card in cards" :key="card.id" cols="12" sm="6" md="4" lg="3">
+              <v-card class="mx-auto" max-width="500" outlined>
+                <v-list-item three-line>
+                  <v-list-item-content>
+                    <v-list-item-subtitle v-text="card.date"></v-list-item-subtitle>
+                    <v-list-item-title v-text="card.home"></v-list-item-title>
+                    <v-list-item-title v-text="card.away"></v-list-item-title>
+                  </v-list-item-content>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="card.region" class="region"></v-list-item-title>
+                  </v-list-item-content>
+                  <v-spacer></v-spacer>
+                </v-list-item>
+              </v-card>
+            </v-col>
+          </v-row>
+        </template>
+
+        <template v-slot:footer>
+          <v-row class="mt-2" align="center" justify="center">
+            <span class="grey--text">Items per page</span>
+            <v-menu offset-y>
+              <template v-slot:activator="{ on }">
+                <v-btn dark text color="primary" class="ml-2" v-on="on">
+                  {{ itemsPerPage }}
+                  <v-icon>mdi-chevron-down</v-icon>
+                </v-btn>
+              </template>
+              <v-list>
+                <v-list-item
+                  v-for="(number, index) in itemsPerPageArray"
+                  :key="index"
+                  @click="updateItemsPerPage(number)"
+                >
+                  <v-list-item-title>{{ number }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+
+            <v-spacer></v-spacer>
+
+            <span class="mr-4 grey--text">Page {{ page }} of {{ numberOfPages }}</span>
+            <v-btn fab dark color="blue darken-3" class="mr-1" @click="formerPage">
+              <v-icon>mdi-chevron-left</v-icon>
+            </v-btn>
+            <v-btn fab dark color="blue darken-3" class="ml-1" @click="nextPage">
+              <v-icon>mdi-chevron-right</v-icon>
+            </v-btn>
+          </v-row>
+        </template>
+      </v-data-iterator>
+    </v-container>
   </div>
 </template>
 
 <script>
-import { AAPIONEER } from "~/assets/constants";
 import cards from "../data/2020girlsSchedule.json";
 
 export default {
   data() {
     return {
+      itemsPerPageArray: [4, 8, 12],
+      page: 1,
+      itemsPerPage: 4,
+      sortBy: "date",
       cards
     };
-  }
-};
-</script>
-
-
-
-<!-- Comment 
-
-<template>
-  <v-row class="fill-height">
-    <v-col>
-      <v-sheet height="64">
-        <v-toolbar flat color="dark">
-          <v-btn outlined class="mr-4" @click="setToday">Today</v-btn>
-          <v-btn fab text small @click="prev">
-            <v-icon small>mdi-chevron-left</v-icon>
-          </v-btn>
-          <v-btn fab text small @click="next">
-            <v-icon small>mdi-chevron-right</v-icon>
-          </v-btn>
-          <v-toolbar-title>{{ title }}</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-menu bottom right>
-            <template v-slot:activator="{ on }">
-              <v-btn outlined v-on="on">
-                <span>{{ typeToLabel[type] }}</span>
-                <v-icon right>mdi-menu-down</v-icon>
-              </v-btn>
-            </template>
-            <v-list>
-              <v-list-item @click="type = 'day'">
-                <v-list-item-title>Day</v-list-item-title>
-              </v-list-item>
-              <v-list-item @click="type = 'week'">
-                <v-list-item-title>Week</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
-        </v-toolbar>
-      </v-sheet>
-      <v-sheet height="600">
-        <v-calendar
-          ref="calendar"
-          v-model="focus"
-          color="primary"
-          :events="events"
-          :event-color="getEventColor"
-          :event-margin-bottom="3"
-          :now="today"
-          :type="type"
-          @click:event="showEvent"
-          @click:more="viewDay"
-          @click:date="viewDay"
-          @change="updateRange"
-          :event-name="setEventName"
-          start="2020-03-09"
-        ></v-calendar>
-        <v-menu
-          v-model="selectedOpen"
-          :close-on-content-click="false"
-          :activator="selectedElement"
-          full-width
-          offset-x
-        >
-          <v-card color="grey lighten-4" min-width="350px" flat>
-            <v-toolbar :color="selectedEvent.color" dark>
-              <v-btn icon>
-                <v-icon>mdi-pencil</v-icon>
-              </v-btn>
-              <v-toolbar-title>{{selectedEvent.homeTeam}} vs {{selectedEvent.awayTeam}}</v-toolbar-title>
-              <v-spacer></v-spacer>
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-              <v-btn icon>
-                <v-icon>mdi-dots-vertical</v-icon>
-              </v-btn>
-            </v-toolbar>
-            <v-card-text>
-              <span v-html="selectedEvent.details"></span>
-            </v-card-text>
-            <v-card-actions>
-              <v-btn text color="secondary" @click="selectedOpen = false">Cancel</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-menu>
-        <v-card class="mx-auto">
-          <v-container fluid>
-            <v-row dense>
-              <v-col>
-                <v-card class="mx-auto" outlined>
-                  <article class="gdocs-container">
-                    <vue-friendly-iframe
-                      :src="
-          'https://docs.google.com/spreadsheets/d/e/2PACX-1vR6A8XwIN_Q21i5zSQdP3oIev_-t7edsSWRpzWWqlgQ8SA-f7Ct4EbkSHbvriqve8T5FJRYjBLW_16u/pubhtml'
-        "
-                    ></vue-friendly-iframe>
-                  </article>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </v-sheet>
-    </v-col>
-  </v-row>
-</template>
-
-
-<script>
-import VueFriendlyIframe from "vue-friendly-iframe";
-import schedule from "~/data/2020girlsSchedule.json";
-
-export default {
-  data: () => ({
-    today: Date.now().toString(),
-    focus: Date.now().toString(),
-    type: "week",
-    typeToLabel: {
-      week: "Week",
-      day: "Day"
-    },
-    start: null,
-    end: null,
-    selectedEvent: {},
-    selectedElement: null,
-    selectedOpen: false,
-    events: schedule
-  }),
-  components: {
-    VueFriendlyIframe
   },
   computed: {
-    title() {
-      const { start, end } = this;
-      if (!start || !end) {
-        return "";
-      }
-
-      const startMonth = this.monthFormatter(start);
-      const endMonth = this.monthFormatter(end);
-      const suffixMonth = startMonth === endMonth ? "" : endMonth;
-
-      const startYear = start.year;
-      const endYear = end.year;
-      const suffixYear = startYear === endYear ? "" : endYear;
-
-      const startDay = start.day + this.nth(start.day);
-      const endDay = end.day + this.nth(end.day);
-
-      switch (this.type) {
-        case "week":
-        case "4day":
-          return `${startMonth} ${startDay} ${startYear} - ${suffixMonth} ${endDay} ${suffixYear}`;
-        case "day":
-          return `${startMonth} ${startDay} ${startYear}`;
-      }
-      return "";
-    },
-    monthFormatter() {
-      return this.$refs.calendar.getFormatter({
-        timeZone: "UTC",
-        month: "long"
-      });
+    numberOfPages() {
+      return Math.ceil(this.cards.length / this.itemsPerPage);
     }
   },
-  mounted() {
-    this.$refs.calendar.checkChange();
-  },
   methods: {
-    viewDay({ date }) {
-      this.focus = date;
-      this.type = "day";
-    },
-    getEventColor(event) {
-      return event.color;
-    },
-    setToday() {
-      this.focus = this.today;
-    },
-    prev() {
-      this.$refs.calendar.prev();
-    },
-    next() {
-      this.$refs.calendar.next();
-    },
-    setEventName(events) {
-      return `${events.input.homeTeam} vs ${events.input.awayTeam}`;
-    },
-    showEvent({ nativeEvent, event }) {
-      const open = () => {
-        this.selectedEvent = event;
-        this.selectedElement = nativeEvent.target;
-        setTimeout(() => (this.selectedOpen = true), 10);
-      };
-      if (this.selectedOpen) {
-        this.selectedOpen = false;
-        setTimeout(open, 10);
-      } else {
-        open();
-      }
+    nextPage() {
+      if (this.page + 1 <= this.numberOfPages) {
+        debugger;
 
-      nativeEvent.stopPropagation();
+        this.page += 1;
+      }
     },
-    updateRange({ start, end }) {
-      // You could load events from an outside source (like database) now that we have the start and end dates on the calendar
-      this.start = start;
-      this.end = end;
+    formerPage() {
+      if (this.page - 1 >= 1) {
+        debugger;
+
+        this.page -= 1;
+      }
     },
-    nth(d) {
-      return d > 3 && d < 21
-        ? "th"
-        : ["th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"][d % 10];
+    updateItemsPerPage(number) {
+      this.itemsPerPage = number;
     }
   }
 };
 </script>
-
--->

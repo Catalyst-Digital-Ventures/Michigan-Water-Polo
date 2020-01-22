@@ -1,5 +1,6 @@
 [
 	{
+		"id": 1,
 		"home": "Portage",
 		"away": "Mason",
 		"region": "East",
@@ -8,6 +9,7 @@
 		"flex": 12
 	},
 	{
+		"id": 2,
 		"home": "Holt/EL",
 		"away": "AA Huron",
 		"region": "East",
@@ -16,6 +18,7 @@
 		"flex": 12
 	},
 	{
+		"id": 3,
 		"home": "Mason",
 		"away": "Grand Blanc",
 		"region": "East",
@@ -24,6 +27,7 @@
 		"flex": 12
 	},
 	{
+		"id": 4,
 		"home": "AA Huron",
 		"away": "AA Pioneer",
 		"region": "East",
@@ -32,6 +36,7 @@
 		"flex": 12
 	},
 	{
+		"id": 5,
 		"home": "Portage",
 		"away": "Chelsea",
 		"region": "East",
@@ -40,6 +45,7 @@
 		"flex": 12
 	},
 	{
+		"id": 6,
 		"home": "Grand Ledge",
 		"away": "Mason",
 		"region": "East",
@@ -48,6 +54,7 @@
 		"flex": 12
 	},
 	{
+		"id": 7,
 		"home": "Ann Arbor Pioneer",
 		"away": "Skyline",
 		"region": "East",
