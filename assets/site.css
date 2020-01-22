@@ -53,3 +53,14 @@
 .logo {
 	width: 250px;
 }
+.region {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

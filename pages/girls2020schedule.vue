@@ -1,19 +1,20 @@
 
 <template>
   <div>
-    <p>Girls 2020 Schedule</p>
+    <p class="title">Girls 2020 Schedule</p>
     <v-card class="mx-auto" max-width="800">
       <v-container fluid>
-        <p>Upcoming Games</p>
-
         <v-row>
           <v-col v-for="card in cards" :key="card.date" :cols="card.flex">
             <v-card class="mx-auto" max-width="500" outlined>
               <v-list-item three-line>
                 <v-list-item-content>
                   <v-list-item-subtitle v-text="card.date"></v-list-item-subtitle>
-                  <v-list-item-subtitle v-text="card.home"></v-list-item-subtitle>
-                  <v-list-item-subtitle v-text="card.away"></v-list-item-subtitle>
+                  <v-list-item-title v-text="card.home"></v-list-item-title>
+                  <v-list-item-title v-text="card.away"></v-list-item-title>
+                </v-list-item-content>
+                <v-list-item-content>
+                  <v-list-item-title v-text="card.region" class="region"></v-list-item-title>
                 </v-list-item-content>
                 <v-spacer></v-spacer>
               </v-list-item>
@@ -21,6 +22,7 @@
           </v-col>
         </v-row>
       </v-container>
+      <v-pagination v-model="page" :length="6"></v-pagination>
     </v-card>
   </div>
 </template>
