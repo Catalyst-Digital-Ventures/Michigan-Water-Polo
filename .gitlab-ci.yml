@@ -4,6 +4,6 @@
     
   build the project:
     stage: build
-    scripts:
+    script:
       - npm run build
       - npm run start
