@@ -1,10 +1,12 @@
-  stages:
-    - build
-    - start
+image: node:latest
+
+stages:
+ - build
+  - start
     
-  build the project:
-    stage: build
-    script:
-      - npm install
-      - npm run build
-      - npm run start
+build the project:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+    - npm run start
