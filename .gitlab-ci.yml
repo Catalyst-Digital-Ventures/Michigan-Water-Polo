@@ -2,8 +2,8 @@
     - build
     - start
     
-build the project:
-  stage: build
-  scripts:
-    - npm run build
-    - npm run start
+  build the project:
+    stage: build
+    scripts:
+      - npm run build
+      - npm run start
