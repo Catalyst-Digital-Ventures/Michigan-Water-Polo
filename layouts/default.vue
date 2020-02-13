@@ -6,8 +6,9 @@
       <v-toolbar-title>
         <nuxt-link class="navbarlink" to="/">Michigan Water Polo Association</nuxt-link>
       </v-toolbar-title>
-      <img src="/logo.png" class="thumbnail" />
-
+      <nuxt-link to="/">
+        <img src="/logo.png" class="thumbnail" />
+      </nuxt-link>
       <v-spacer></v-spacer>
       <v-btn text nuxt to="/policies" class="navbarlink">Policies</v-btn>
       <v-btn text nuxt to="/girls2020schedule" class="navbarlink">Girls 2020 Schedule</v-btn>
@@ -63,17 +64,17 @@ export default {
       fixed: false,
       items: [
         {
-          icon: "mdi-apps",
+          icon: "mdi-book-information-variant",
           title: "Policies",
           to: "/policies"
         },
         {
-          icon: "mdi-chart-bubble",
+          icon: "mdi-calendar-month-outline",
           title: "Girls 2020 Schedule",
           to: "/girls2020schedule"
         },
         {
-          icon: "mdi-chart-bubble",
+          icon: "mdi-scoreboard-outline",
           title: "Boys 2019 Results",
           to: "/boys2019results"
         }
