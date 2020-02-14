@@ -8,3 +8,6 @@ build the project:
   script:
     - npm install
     - npm run prod
+  artifacts:
+    paths:
+      - ./nuxt
