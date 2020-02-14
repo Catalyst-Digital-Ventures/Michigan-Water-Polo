@@ -1,4 +1,4 @@
-image: node
+image: node:10.15
 
 stages:
   - install
@@ -31,7 +31,7 @@ test static:
     - grep -q "Michigan" ./dist/index.html
 
 test universal:
-  image: node
+  image: node:10.15
   stage: test
   script:
     - npm install
