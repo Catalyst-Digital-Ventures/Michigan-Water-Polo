@@ -28,7 +28,15 @@ build the project:
     - master
 
 test artifacts:
+  image: alpine
   stage: test
   script:
-    - grep "Michigan" ./dist/index.html
-    - grep "XXXXXXXXXX" ./dist/index.html
+    - grep -q "Michigan" ./dist/index.html
+
+test website:
+  image: node
+  stage: test
+  script:
+    - npm install
+    - npm run generate
+    - curl "http://localhost:3000" | grep -q "Michigan" ./dist/index.html
