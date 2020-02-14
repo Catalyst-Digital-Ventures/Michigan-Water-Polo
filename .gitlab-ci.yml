@@ -13,9 +13,6 @@ install dependences:
   stage: install
   script:
     - npm install
-  artifacts:
-    paths:
-      - node_modules
 
 build the project:
   stage: build
@@ -27,16 +24,16 @@ build the project:
   only:
     - master
 
-test artifacts:
+test static:
   image: alpine
   stage: test
   script:
     - grep -q "Michigan" ./dist/index.html
 
-test website:
+test universal:
   image: node
   stage: test
   script:
-    - npm install
-    - npm run generate
+    - npm run build
+    - npm run start
     - curl "http://localhost:3000" | grep -q "Michigan" ./dist/index.html
