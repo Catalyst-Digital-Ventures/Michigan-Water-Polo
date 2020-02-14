@@ -14,9 +14,9 @@ cache:
 build the project:
   stage: build
   script:
+    - ls
     - npm run build
     - ls
-    - npm run start
   artifacts:
     paths:
       - nuxt
