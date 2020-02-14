@@ -7,7 +7,7 @@ build the project:
   stage: build
   script:
     - npm install
-    - npm run prod
+    - npm run build
   artifacts:
     paths:
       - ./nuxt
