@@ -1,14 +1,23 @@
+image: node
+
 stages:
   - build
   - start
 
+before_script:
+  - npm install
+
+cache:
+  paths:
+    - node_modules/
+
 build the project:
-  image: node:10
   stage: build
   script:
-    - npm install
     - npm run build
     - ls
   artifacts:
     paths:
       - nuxt
+    only:
+      - master
