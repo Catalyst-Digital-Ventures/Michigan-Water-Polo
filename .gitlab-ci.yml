@@ -34,6 +34,7 @@ test universal:
   image: node
   stage: test
   script:
-    - npm run build
-    - npm run start
+    - npm run install
+    - npm run build -dd
+    - npm run start -dd
     - curl "http://localhost:3000" | grep -q "Michigan" ./dist/index.html
