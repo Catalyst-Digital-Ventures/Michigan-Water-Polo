@@ -6,6 +6,7 @@ stages:
   - test
 
 cache:
+  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
 
@@ -29,12 +30,3 @@ test static:
   stage: test
   script:
     - grep -q "Michigan" ./dist/index.html
-
-test universal:
-  image: node:10.15
-  stage: test
-  script:
-    - npm install
-    - npm run build -dd
-    - npm run start -dd
-    - curl "http://localhost:3000" | grep -q "Michigan" ./dist/index.html
