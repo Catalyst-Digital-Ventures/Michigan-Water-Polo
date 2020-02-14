@@ -19,5 +19,5 @@ build the project:
   artifacts:
     paths:
       - nuxt
-    only:
-      - master
+  only:
+    - master
