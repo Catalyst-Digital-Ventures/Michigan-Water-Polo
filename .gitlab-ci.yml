@@ -28,8 +28,9 @@ build the static:
 build the ssr:
   stage: build
   script:
-    - npm run build
-    - npm run start &
+    - npm install
+    - npm run build --loglevel verbose
+    - npm run start --loglevel verbose &
     - sleep 3
   artifacts:
     paths:
