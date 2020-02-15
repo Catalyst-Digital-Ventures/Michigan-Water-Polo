@@ -15,13 +15,25 @@ install dependences:
   script:
     - npm install
 
-build the project:
+build the static:
   stage: build
   script:
     - npm run generate
   artifacts:
     paths:
       - dist
+  only:
+    - master
+
+build the ssr:
+  stage: build
+  script:
+    - npm run build
+    - npm run start &
+    - sleep 3
+  artifacts:
+    paths:
+      - nuxt
   only:
     - master
 
