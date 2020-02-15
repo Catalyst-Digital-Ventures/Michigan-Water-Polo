@@ -32,6 +32,7 @@ build the ssr:
     - npm run build --loglevel verbose
     - npm run start --loglevel verbose &
     - sleep 3
+    - ls
   artifacts:
     paths:
       - nuxt
