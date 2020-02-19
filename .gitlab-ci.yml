@@ -26,8 +26,6 @@ Install Dependencies:
   
 Build Site:
   stage: build
-  only:
-    - master
   script:
     - npm run generate
   artifacts:
@@ -42,6 +40,8 @@ Test Artifact:
 
 Deploy Staging:
   stage: deploy staging
+    only:
+    - master
   environment:
     name: staging
     url: http://$STAGING_DOMAIN
@@ -51,6 +51,8 @@ Deploy Staging:
 
 Deploy Prod:
   stage: deploy prod
+    only:
+    - master
   environment:
     name: prod
     url: http://$PROD_DOMAIN
@@ -62,5 +64,7 @@ Deploy Prod:
 
 Test Prod:
   stage: deployment test
+    only:
+    - master
   script:
   - curl "$PROD_DOMAIN" | tac | tac | grep -q "Michigan"
