@@ -22,7 +22,7 @@ Install Dependencies:
 Build Site:
   stage: build
   cache:
-  key: $CI_COMMIT_REF_SLUG
+    key: $CI_COMMIT_REF_SLUG
   only:
     - master
   script:
