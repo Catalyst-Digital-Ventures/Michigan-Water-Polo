@@ -55,6 +55,7 @@ Deploy Prod:
     name: prod
     url: http://$PROD_DOMAIN
   when: manual
+  allow_failure: false
   script:
     - npm install --global surge
     - surge --project ./dist --domain $PROD_DOMAIN
