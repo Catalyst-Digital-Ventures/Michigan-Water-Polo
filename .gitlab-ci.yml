@@ -9,7 +9,8 @@ stages:
   - install
   - build
   - test
-  - deploy
+  - deploy staging
+  - deploy prod
   - deployment test
 
 Install Dependencies:
@@ -36,13 +37,25 @@ Test Artifact:
   script:
     - grep -q "Michigan" ./dist/index.html
 
-Deploy to Surge:
-  stage: deploy
+Deploy Staging:
+  stage: deploy staging
+  environment:
+    name: staging
+    url: mwpanuxtgitlab-stage.surge.sh
+  script:
+    - npm install --global surge
+    - surge --project ./dist --domain mwpanuxtgitlab-stage.surge.sh
+
+Deploy Prod:
+  stage: deploy prod
+  environment:
+    name: prod
+    url: mwpanuxtgitlab.surge.sh
   script:
     - npm install --global surge
     - surge --project ./dist --domain mwpanuxtgitlab.surge.sh
 
-Test Deployment:
+Test Prod:
   stage: deployment test
   script:
   - curl "mwpanuxtgitlab.surge.sh" | tac | tac | grep -q "Michigan"
