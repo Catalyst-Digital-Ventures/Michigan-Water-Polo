@@ -1,13 +1,14 @@
 image: node
 
 stages:
-  - Install
-  - Build
-  - Test
-  - Deploy
+  - install
+  - build
+  - test
+  - deploy
+  - deployment test
 
 Install Dependencies:
-  stage: Install
+  stage: install
   script:
   - npm install
   artifacts:
@@ -15,7 +16,7 @@ Install Dependencies:
     - ./node_modules
   
 Build Site:
-  stage: Build
+  stage: build
   only:
     - master
   script:
@@ -26,12 +27,17 @@ Build Site:
 
 Test Artifact:
   image: alpine
-  stage: Test
+  stage: test
   script:
-    - grep "Michigan" ./dist/index.html
+    - grep -q "Michigan" ./dist/index.html
 
 Deploy to Surge:
-  stage: Deploy
+  stage: deploy
   script:
     - npm install --global surge
     - surge --project ./dist --domain mwpanuxtgitlab.surge.sh
+
+Test Deployment:
+  stage: deployment test
+  script:
+  - curl "mwpanuxtgitlab.surge.sh" | grep -q "Michigan" ./dist/index.html
