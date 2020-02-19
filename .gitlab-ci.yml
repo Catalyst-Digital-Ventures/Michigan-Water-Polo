@@ -4,6 +4,7 @@ stages:
   - Install
   - Build
   - Test
+  - Deploy
 
 Install Dependencies:
   stage: Install
@@ -29,3 +30,9 @@ Test Artifact:
   stage: Test
   script:
     - grep "Michigan" ./dist/index.html
+
+Deploy to Surge:
+  stage: Deploy
+  script:
+    - npm install --global surge
+    - surge --project ./dist --domain mwpanuxtgitlab.surge.sh
