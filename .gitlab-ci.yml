@@ -18,7 +18,8 @@ Build Site:
   only:
     - master
   script:
-    - npm run generate  
+    - npm run generate &
+    - sleep 3
   artifacts:
     paths:
     - ./dist
