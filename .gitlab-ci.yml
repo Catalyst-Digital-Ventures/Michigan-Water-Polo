@@ -1,10 +1,5 @@
 image: node
 
-cache:
-  key: $CI_COMMIT_REF_SLUG
-  paths:
-    - node_modules/
-
 stages:
   - install
   - build
@@ -13,6 +8,10 @@ stages:
   - deployment test
 
 Install Dependencies:
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - node_modules/
   stage: install
   script:
   - npm install
@@ -22,6 +21,8 @@ Install Dependencies:
   
 Build Site:
   stage: build
+  cache:
+  key: $CI_COMMIT_REF_SLUG
   only:
     - master
   script:
