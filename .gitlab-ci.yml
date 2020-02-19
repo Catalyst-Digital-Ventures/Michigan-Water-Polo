@@ -46,4 +46,5 @@ Test Deployment:
   image: alpine
   stage: deployment test
   script:
+  - npm install curl
   - curl "mwpanuxtgitlab.surge.sh" | tac | tac | grep -q "Michigan" ./dist/index.html
