@@ -4,6 +4,9 @@ cache:
   key: $CI_COMMIT_REF_SLUG
   paths:
     - node_modules/
+variables:
+  STAGING_DOMAIN: mwpanuxtgitlab-stage.surge.sh
+  PROD_DOMAIN: mwpanuxtgitlab.surge.sh
 
 stages:
   - install
@@ -41,21 +44,22 @@ Deploy Staging:
   stage: deploy staging
   environment:
     name: staging
-    url: mwpanuxtgitlab-stage.surge.sh
+    url: http://$STAGING_DOMAIN
   script:
     - npm install --global surge
-    - surge --project ./dist --domain mwpanuxtgitlab-stage.surge.sh
+    - surge --project ./dist --domain $STAGING_DOMAIN
 
 Deploy Prod:
   stage: deploy prod
   environment:
     name: prod
-    url: mwpanuxtgitlab.surge.sh
+    url: http://$PROD_DOMAIN
+  when: manual
   script:
     - npm install --global surge
-    - surge --project ./dist --domain mwpanuxtgitlab.surge.sh
+    - surge --project ./dist --domain $PROD_DOMAIN
 
 Test Prod:
   stage: deployment test
   script:
-  - curl "mwpanuxtgitlab.surge.sh" | tac | tac | grep -q "Michigan"
+  - curl "$PROD_DOMAIN" | tac | tac | grep -q "Michigan"
