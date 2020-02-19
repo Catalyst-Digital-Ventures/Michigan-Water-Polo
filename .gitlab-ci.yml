@@ -28,4 +28,3 @@ Test Artifact:
   stage: Test
   script:
     - grep "Michigan" ./dist/index.html
-    - grep "sdjfhs;dlkfjsd" ./dist/index.html
