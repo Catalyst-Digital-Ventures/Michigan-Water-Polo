@@ -46,4 +46,4 @@ Deploy to Surge:
 Test Deployment:
   stage: deployment test
   script:
-  - curl "mwpanuxtgitlab.surge.sh" | tac | tac | grep -q "Michigan" ./dist/index.html
+  - curl "mwpanuxtgitlab.surge.sh" | tac | tac | grep -q "Michigan"
