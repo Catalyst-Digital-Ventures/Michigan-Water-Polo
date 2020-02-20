@@ -2,7 +2,6 @@
   <v-app light>
     <v-app-bar color="blue darken-4" class="navbar" app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-
       <v-toolbar-title>
         <nuxt-link class="navbarlink" to="/">Michigan Water Polo Association</nuxt-link>
       </v-toolbar-title>
@@ -15,6 +14,11 @@
       <v-btn text nuxt to="/boys2019results" class="navbarlink">Boys 2019 Results</v-btn>
       <template v-if="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
+    <v-system-bar color="blue darken-3">
+      <v-btn text nuxt to="/policies" class="navbarlink">Rules and Policies</v-btn>
+      <v-btn text nuxt to="/girls2020schedule" class="navbarlink">About Us</v-btn>
+      <v-btn text nuxt to="/boys2019results" class="navbarlink">Past Seasons</v-btn>
+    </v-system-bar>
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
 
     <v-navigation-drawer v-model="drawer" fixed temporary>
