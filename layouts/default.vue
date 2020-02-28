@@ -15,9 +15,10 @@
       <template v-if="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
     <v-system-bar color="blue darken-3">
-      <v-btn text nuxt to="/policies" class="navbarlink">Rules and Policies</v-btn>
-      <v-btn text nuxt to="/girls2020schedule" class="navbarlink">About Us</v-btn>
-      <v-btn text nuxt to="/boys2019results" class="navbarlink">Past Seasons</v-btn>
+      <v-btn text nuxt to="/policies" class="navbarlink">Officiating</v-btn>
+      <v-btn text nuxt to="/girls2020schedule" class="navbarlink">Post Season</v-btn>
+      <v-btn text nuxt to="/boys2019results" class="navbarlink">Resources</v-btn>
+      <v-btn text nuxt to="/boys2019results" class="navbarlink">Tournaments</v-btn>
     </v-system-bar>
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
 
@@ -80,6 +81,26 @@ export default {
         {
           icon: "mdi-scoreboard-outline",
           title: "Boys 2019 Results",
+          to: "/boys2019results"
+        },
+        {
+          icon: "mdi-scoreboard-outline",
+          title: "Officiating",
+          to: "/boys2019results"
+        },
+        {
+          icon: "mdi-scoreboard-outline",
+          title: "Post Season",
+          to: "/boys2019results"
+        },
+        {
+          icon: "mdi-scoreboard-outline",
+          title: "Resources",
+          to: "/boys2019results"
+        },
+        {
+          icon: "mdi-scoreboard-outline",
+          title: "Tournaments",
           to: "/boys2019results"
         }
       ],
