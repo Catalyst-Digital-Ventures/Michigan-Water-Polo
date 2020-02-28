@@ -1,73 +1,92 @@
 .policies {
-	line-height: 2.5em;
+  line-height: 2.5em;
+}
+.gdocs-container {
+  position: relative;
+  padding-bottom: 800px;
+}
+@media only screen and (max-width: 815px) {
+  .gdocs-container {
+    padding-bottom: 170%;
+    position: static;
+  }
 }
 .gdocs-container iframe {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100vh;
-	height: 8320px;
-	border: 0;
-	max-width: 750px;
-	overflow: hidden;
-}
-@media only screen and (max-width: 600px) {
-	.gdocs-container iframe {
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 50vh;
-		height: 12700px;
-	}
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  border: 0;
+  max-width: 800px;
 }
 
+.gsheets-container {
+  position: relative;
+  padding-bottom: 800px;
+}
+@media only screen and (max-width: 815px) {
+  .gsheets-container {
+    padding-bottom: 170%;
+    position: static;
+  }
+}
+.gsheets-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  border: 0;
+  max-width: 1200px;
+}
 .navbar {
-	position: sticky !important;
+  position: sticky !important;
 }
 .navbarlink {
-	text-decoration: none;
-	color: white !important;
+  text-decoration: none;
+  color: white !important;
 }
 .sidelink {
-	text-decoration: none;
-	color: #ffc107 !important;
+  text-decoration: none;
+  color: #ffc107 !important;
 }
 .footerlink {
-	text-decoration: none;
-	color: black;
-	margin-left: auto;
+  text-decoration: none;
+  color: black;
+  margin-left: auto;
 }
 .thumbnail {
-	visibility: hidden;
-	width: 75px;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
+  visibility: hidden;
+  width: 75px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 600px) {
-	.thumbnail {
-		visibility: visible;
-	}
-	.navbarlink {
-		visibility: hidden;
-	}
+  .thumbnail {
+    visibility: visible;
+  }
+  .navbarlink {
+    visibility: hidden;
+  }
 }
 .logo {
-	width: 250px;
+  width: 250px;
 }
 .region {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .pageTitle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 700;
-	font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.75rem;
 }
