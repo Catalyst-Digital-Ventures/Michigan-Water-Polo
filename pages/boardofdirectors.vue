@@ -3,11 +3,13 @@
     <h1 class="pageTitle">Board of Directors</h1>
 
     <div class="gsheets-container">
-      <vue-friendly-iframe
-        :src="
+      <client-only>
+        <vue-friendly-iframe
+          :src="
            'https://docs.google.com/document/d/e/2PACX-1vQz35Mw9MUbhcb7icMdRFDWNCqF0Nb0DZ7b6-JDq0gJJkd3Jmu53lbYS-izC6iRQQ5MqwLUEmbOdl_R/pub?embedded=true'
         "
-      ></vue-friendly-iframe>
+        ></vue-friendly-iframe>
+      </client-only>
     </div>
   </div>
 </template>

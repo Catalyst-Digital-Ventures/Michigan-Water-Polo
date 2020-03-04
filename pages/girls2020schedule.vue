@@ -3,11 +3,13 @@
     <h1 class="pageTitle">Girls 2020 Schedule</h1>
 
     <article class="gsheets-container">
-      <vue-friendly-iframe
-        :src="
+      <client-only>
+        <vue-friendly-iframe
+          :src="
           'https://docs.google.com/spreadsheets/d/e/2PACX-1vRBxhrkW_iSxn38m2l0oFmI9JSnrZZRxwMaOdLnDm4dPfE0Mc1HMtcvxcCtxB26Tk7gGMBSv2vpbUsV/pubhtml'
         "
-      ></vue-friendly-iframe>
+        ></vue-friendly-iframe>
+      </client-only>
     </article>
   </div>
 </template>

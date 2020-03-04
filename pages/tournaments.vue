@@ -1,11 +1,13 @@
 <template>
   <div>
     <div class="gsheets-container">
-      <vue-friendly-iframe
-        :src="
+      <client-only>
+        <vue-friendly-iframe
+          :src="
            'https://docs.google.com/document/d/e/2PACX-1vT_lZroOYPkyXYD9xOAkiIYdfRX5myp4y-3CrVZtRp1qLeWL2wcpJxwlZkssqZQgg/pub?embedded=true'
         "
-      ></vue-friendly-iframe>
+        ></vue-friendly-iframe>
+      </client-only>
     </div>
   </div>
 </template>

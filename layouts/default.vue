@@ -12,7 +12,7 @@
       <v-btn text nuxt to="/policies" class="navbarlink">Policies</v-btn>
       <v-btn text nuxt to="/girls2020schedule" class="navbarlink">Girls 2020 Schedule</v-btn>
       <v-btn text nuxt to="/boys2019results" class="navbarlink">Boys 2019 Results</v-btn>
-      <template v-if="$vuetify.breakpoint.smAndUp"></template>
+      <template v-show="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
     <v-system-bar color="blue darken-3">
       <v-btn text nuxt to="/coop" class="navbarlink">Cooperative Agreements</v-btn>
@@ -52,8 +52,9 @@
     </v-content>
 
     <v-footer>
-      <span>&copy; 2020 Michigan Water Polo Association</span>
-      Last Updated: March 09, 2020
+      <v-spacer></v-spacer>
+
+      <span>&copy; 2020 Michigan Water Polo Association Last Updated: March 09, 2020</span>
     </v-footer>
   </v-app>
 </template>
