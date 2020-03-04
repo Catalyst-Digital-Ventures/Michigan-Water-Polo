@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1 class="pageTitle">Cooperative Agreement Policy</h1>
     <div class="gsheets-container">
       <vue-friendly-iframe
         :src="

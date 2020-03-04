@@ -15,7 +15,6 @@
       <template v-if="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
     <v-system-bar color="blue darken-3">
-      <v-btn text nuxt to="/policies" class="navbarlink">Officiating</v-btn>
       <v-btn text nuxt to="/coop" class="navbarlink">Cooperative Agreements</v-btn>
       <v-btn text nuxt to="/tournaments" class="navbarlink">Tournaments</v-btn>
       <v-btn text nuxt to="/boardofdirectors" class="navbarlink">Board Of Directors</v-btn>
@@ -81,11 +80,6 @@ export default {
         {
           icon: "mdi-scoreboard-outline",
           title: "Boys 2019 Results",
-          to: "/boys2019results"
-        },
-        {
-          icon: "mdi-scoreboard-outline",
-          title: "Officiating",
           to: "/boys2019results"
         },
         {
