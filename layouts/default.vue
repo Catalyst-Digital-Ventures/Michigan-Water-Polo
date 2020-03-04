@@ -51,10 +51,10 @@
       </v-container>
     </v-content>
 
-    <v-footer>
+    <v-footer :fixed="fixed" app>
       <v-spacer></v-spacer>
 
-      <span>&copy; 2020 Michigan Water Polo Association Last Updated: March 09, 2020</span>
+      <span>&copy; 2020 Michigan Water Polo Association Last Updated: {{new Date().toDateString()}}</span>
     </v-footer>
   </v-app>
 </template>
