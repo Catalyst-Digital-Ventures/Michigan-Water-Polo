@@ -16,9 +16,9 @@
     </v-app-bar>
     <v-system-bar color="blue darken-3">
       <v-btn text nuxt to="/policies" class="navbarlink">Officiating</v-btn>
-      <v-btn text nuxt to="/girls2020schedule" class="navbarlink">Post Season</v-btn>
-      <v-btn text nuxt to="/boys2019results" class="navbarlink">Resources</v-btn>
-      <v-btn text nuxt to="/boys2019results" class="navbarlink">Tournaments</v-btn>
+      <v-btn text nuxt to="/coop" class="navbarlink">Cooperative Agreements</v-btn>
+      <v-btn text nuxt to="/tournaments" class="navbarlink">Tournaments</v-btn>
+      <v-btn text nuxt to="/boardofdirectors" class="navbarlink">Board Of Directors</v-btn>
     </v-system-bar>
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
 
@@ -89,19 +89,19 @@ export default {
           to: "/boys2019results"
         },
         {
-          icon: "mdi-scoreboard-outline",
-          title: "Post Season",
-          to: "/boys2019results"
+          icon: "mdi-file-document",
+          title: "Cooperative Agreements",
+          to: "/coop"
         },
         {
-          icon: "mdi-scoreboard-outline",
-          title: "Resources",
-          to: "/boys2019results"
-        },
-        {
-          icon: "mdi-scoreboard-outline",
+          icon: "mdi-tournament",
           title: "Tournaments",
-          to: "/boys2019results"
+          to: "/tournaments"
+        },
+        {
+          icon: "mdi-account-group",
+          title: "Board Of Directors",
+          to: "/boardofdirectors"
         }
       ],
       miniVariant: false,
