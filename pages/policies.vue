@@ -1,13 +1,14 @@
 <template>
   <div>
-    <h1 class="pageTitle">Polices</h1>
-    <v-layout column justify-center align-center>
+    <h1 class="pageTitle">Policies</h1>
+
+    <div class="gsheets-container">
       <vue-friendly-iframe
         :src="
-           'https://docs.google.com/document/d/e/2PACX-1vTbZt6iamk_ov46j9cW2Ls0xcsJVeTvygW3qHnpV0LHoGkhkyTf5W0b_rylKGZI9o95zM1RW-9ZTMrg/pub?embedded=true'
+           'https://docs.google.com/document/d/e/2PACX-1vTtf2e2oXaGyYuUSx8CARZeEJ-Er9wA-mLvjQLs3bd7zg2WY9uO50pKqkYAU-9-BoKQA8c6rtTNfo54/pub?embedded=true'
         "
       ></vue-friendly-iframe>
-    </v-layout>
+    </div>
   </div>
 </template>
 

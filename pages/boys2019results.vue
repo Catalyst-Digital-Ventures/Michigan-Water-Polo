@@ -14,18 +14,13 @@
                     <v-list-item-title v-text="card.home"></v-list-item-title>
                     <v-list-item-title v-text="card.away"></v-list-item-title>
                   </v-list-item-content>
-                  <v-spacer></v-spacer>
-
-                  <v-list-item-content>
+                  <div class="overline mb-1">{{card.date}}</div>
+                  <v-list-item-content class="rightSideScore">
                     <div class="overline mb-1">Score</div>
                     <v-list-item-title v-text="card.homeScore"></v-list-item-title>
                     <v-list-item-title v-text="card.awayScore"></v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
-
-                <v-card-actions>
-                  <v-btn text>{{card.date}}</v-btn>
-                </v-card-actions>
               </v-card>
             </v-col>
           </v-row>
@@ -41,31 +36,10 @@ import cards from "~/data/2019boysresults.json";
 export default {
   data() {
     return {
-      itemsPerPageArray: [10, 20, 40],
-      search: "",
-      filter: {},
-      sortDesc: false,
-      page: 1,
-      itemsPerPage: 10,
-      sortBy: "name",
       cards
     };
   },
-  computed: {
-    numberOfPages() {
-      return Math.ceil(this.cards.length / this.itemsPerPage);
-    }
-  },
-  methods: {
-    nextPage() {
-      if (this.page + 1 <= this.numberOfPages) this.page += 1;
-    },
-    formerPage() {
-      if (this.page - 1 >= 1) this.page -= 1;
-    },
-    updateItemsPerPage(number) {
-      this.itemsPerPage = number;
-    }
-  }
+  computed: {},
+  methods: {}
 };
 </script>
