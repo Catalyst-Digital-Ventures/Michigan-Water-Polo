@@ -14,10 +14,11 @@
       <v-btn text nuxt to="/boys2019results" class="navbarlink">Boys 2019 Results</v-btn>
       <template v-show="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
-    <v-system-bar color="blue darken-3">
-      <v-btn text nuxt to="/coop" class="navbarlink">Cooperative Agreements</v-btn>
-      <v-btn text nuxt to="/tournaments" class="navbarlink">Tournaments</v-btn>
-      <v-btn text nuxt to="/boardofdirectors" class="navbarlink">Board Of Directors</v-btn>
+    <v-system-bar color="amber" app>
+      <v-spacer></v-spacer>
+      <v-btn text nuxt to="/coop" class="ambernavbarlink">Cooperative Agreements</v-btn>
+      <v-btn text nuxt to="/tournaments" class="ambernavbarlink">Tournaments</v-btn>
+      <v-btn text nuxt to="/boardofdirectors" class="ambernavbarlink">Board Of Directors</v-btn>
     </v-system-bar>
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
 
@@ -51,10 +52,15 @@
       </v-container>
     </v-content>
 
-    <v-footer :fixed="fixed" app>
-      <v-spacer></v-spacer>
+    <v-footer fixed app>
+      <div
+        class="footertext"
+      >&copy; 2020 Michigan Water Polo Association Last Updated: {{new Date().toDateString()}}</div>
 
-      <span>&copy; 2020 Michigan Water Polo Association Last Updated: {{new Date().toDateString()}}</span>
+      <a
+        href="https://www.catalystdigitalventures.com"
+        class="company"
+      >Designed by Catalyst Digital Ventures</a>
     </v-footer>
   </v-app>
 </template>
