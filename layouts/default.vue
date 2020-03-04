@@ -51,10 +51,9 @@
       </v-container>
     </v-content>
 
-    <v-footer :fixed="fixed" app>
+    <v-footer>
       <span>&copy; 2020 Michigan Water Polo Association</span>
       Last Updated: March 09, 2020
-      President: Andrew Olesnavich / Vice-President: Joey Sutherlin
     </v-footer>
   </v-app>
 </template>
