@@ -2,7 +2,7 @@
   <div>
     <h1 class="pageTitle">Policies</h1>
 
-    <div class="gsheets-container">
+    <div class="google-container">
       <client-only>
         <vue-friendly-iframe
           :src="

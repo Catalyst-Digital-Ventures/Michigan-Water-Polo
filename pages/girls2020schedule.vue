@@ -2,7 +2,7 @@
   <div>
     <h1 class="pageTitle">Girls 2020 Schedule</h1>
 
-    <article class="gsheets-container">
+    <article class="google-container">
       <client-only>
         <vue-friendly-iframe
           :src="

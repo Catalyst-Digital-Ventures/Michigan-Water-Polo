@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="gsheets-container">
+    <div class="google-container">
       <client-only>
         <vue-friendly-iframe
           :src="
