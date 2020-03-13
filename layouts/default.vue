@@ -23,7 +23,7 @@
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
     <v-alert
       type="error"
-    >DUE TO GROWING CONCERNS OVER THE COVID-19 VIRUS COMPETITON IS CANCELLED THE WEEKEND OF 3/13/2020</v-alert>
+    >DUE TO GROWING CONCERNS OVER THE COVID-19 VIRUS COMPETITON IS SUSPENDED THE WEEKEND OF 3/13/2020</v-alert>
 
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list-item>
