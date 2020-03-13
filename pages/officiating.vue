@@ -6,7 +6,6 @@
           :src="
            'https://docs.google.com/document/d/e/2PACX-1vT3R4B2x0IorSaZ0gQ81UQVxf1i5XF42H1tuXVKHK0rzgTU3PaDAWC4KgZPiGeJuvyzvZ7Ut7xjylCr/pub?embedded=true'
         "
-          @load="onLoad"
         ></vue-friendly-iframe>
       </client-only>
       <h3 class="sectionHeader">A Message from the Director of Officials</h3>
