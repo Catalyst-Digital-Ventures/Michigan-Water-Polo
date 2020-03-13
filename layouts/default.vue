@@ -12,6 +12,7 @@
       <v-btn text nuxt to="/policies" class="navbarlink">Policies</v-btn>
       <v-btn text nuxt to="/girls2020schedule" class="navbarlink">Girls 2020 Schedule</v-btn>
       <v-btn text nuxt to="/boys2019results" class="navbarlink">Boys 2019 Results</v-btn>
+      <v-btn text nuxt to="/officiating" class="navbarlink">Officiating</v-btn>
       <template v-show="$vuetify.breakpoint.smAndUp"></template>
     </v-app-bar>
     <v-system-bar color="amber" app>
@@ -23,7 +24,7 @@
     <v-system-bar class="navbartop" color="amber"></v-system-bar>
     <v-alert
       type="error"
-    >DUE TO GROWING CONCERNS OVER THE COVID-19 VIRUS COMPETITON IS SUSPENDED THE WEEKEND OF 3/13/2020</v-alert>
+    >DUE TO GROWING CONCERNS OVER THE COVID-19 VIRUS COMPETITON IS SUSPENDED UNTIL FURTHER NOTICE</v-alert>
 
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list-item>
@@ -77,14 +78,9 @@ export default {
       fixed: false,
       items: [
         {
-          icon: "mdi-book-information-variant",
-          title: "Policies",
-          to: "/policies"
-        },
-        {
-          icon: "mdi-calendar-month-outline",
-          title: "Girls 2020 Schedule",
-          to: "/girls2020schedule"
+          icon: "mdi-account-group",
+          title: "Board Of Directors",
+          to: "/boardofdirectors"
         },
         {
           icon: "mdi-scoreboard-outline",
@@ -97,14 +93,24 @@ export default {
           to: "/coop"
         },
         {
-          icon: "mdi-tournament",
-          title: "Tournaments",
-          to: "/tournaments"
+          icon: "mdi-calendar-month-outline",
+          title: "Girls 2020 Schedule",
+          to: "/girls2020schedule"
         },
         {
           icon: "mdi-account-group",
-          title: "Board Of Directors",
-          to: "/boardofdirectors"
+          title: "Officiating",
+          to: "/Officiating"
+        },
+        {
+          icon: "mdi-book-information-variant",
+          title: "Policies",
+          to: "/policies"
+        },
+        {
+          icon: "mdi-tournament",
+          title: "Tournaments",
+          to: "/tournaments"
         }
       ],
       miniVariant: false,
