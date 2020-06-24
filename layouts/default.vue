@@ -59,7 +59,7 @@
     <v-footer fixed app>
       <div
         class="footertext"
-      >&copy; 2020 Michigan Water Polo Association Last Updated: {{new Date().toDateString()}}</div>
+      >&copy; 2020 Michigan Water Polo Association Last Updated: {{ lastUpdated}}</div>
 
       <a
         href="https://www.catalystdigitalventures.com"
@@ -73,6 +73,7 @@
 export default {
   data() {
     return {
+      lastUpdated: "Mon Mar 09 2020",
       clipped: false,
       drawer: false,
       fixed: false,
